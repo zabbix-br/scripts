@@ -28,7 +28,6 @@ if (options.secret_key == None):
     parser.error("-k AWS Secret Key is required")
 if (options.metric == None):
     parser.error("-m RDS cloudwatch metric is required")
-###
 
 ### Real code
 metrics = {"CPUUtilization":{"type":"float", "value":None},
